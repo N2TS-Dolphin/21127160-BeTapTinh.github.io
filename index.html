@@ -4,77 +4,80 @@
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="nofollow"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
   <h1 style="text-align: center;">Bé tập tính</h1>
 
   <div class="container mt-5">
-    <!--Row 1-->
-    <div class="row">
-      <div class="col-sm-2">
-        <label for="fnum1">Số thứ 1:</label>
-      </div>
-      <div class="col-sm-4">
-        <input type="number" id="num1" name="fnum1">
-      </div>
-      <div class="col-sm-2">
-        <dl>
-          <dd>
-            <input type="radio" name="operate" id="Plus"> Cộng
-          </dd>
-        </dl>
-      </div>
-      <div class="col-sm-2">
-        <dl>
-          <dd>
-            <input type="radio" name="operate" id="Multiply"> Nhân
-          </dd>
-        </dl>
-      </div>
-    </div>
-    <!--//Row 1-->
-
-    <!--Row 2-->
-    <div class="row">
-      <div class="col-sm-2">
-        <label for="fnum2">Số thứ 2:</label>
-      </div>
-      <div class="col-sm-4">
-        <input type="number" id="num2" name="fnum2">
-      </div>
-      <div class="col-sm-2">
-        <dl>
-          <dd>
-            <input type="radio" name="operate" id="Minus"> Trừ
-          </dd>
-        </dl>
-      </div>
-      <div class="col-sm-2">
-        <dl>
-          <dd>
-            <input type="radio" name="operate" id="Divide"> Chia
-          </dd>
-        </dl>
-      </div>
-    </div>
-    <!--//Row 2-->
-
-    <!--Row 3-->
-    <div class="row">
-      <div class="col-sm-2">
-        <label for="result">Kết quả:</label>
-      </div>
-      <div class="col-sm-4">
-        <div style="width: 189px; height: 30px; margin: 0px; border: 1px solid rgb(133, 133, 133); padding: 2px; padding-top: 1px; padding-bottom: 1px;">
-          <p type="number" id="result" name="result"></p>
+    <form action="/action_page.php">
+      <!--Row 1-->
+      <div class="row">
+        <div class="col-sm-2">
+          <label for="fnum1">Số thứ 1:</label>
+        </div>
+        <div class="col-sm-4">
+          <input type="number" id="fnum1" name="fnum1" required>
+        </div>
+        <div class="col-sm-2">
+          <dl>
+            <dd>
+              <input type="radio" name="operate" id="Plus"> Cộng
+            </dd>
+          </dl>
+        </div>
+        <div class="col-sm-2">
+          <dl>
+            <dd>
+              <input type="radio" name="operate" id="Multiply"> Nhân
+            </dd>
+          </dl>
         </div>
       </div>
-      <div class="col-sm-2">
-        <input type="button" id="button" value="Tính" onclick="buttonClick()">
+      <!--//Row 1-->
+
+      <!--Row 2-->
+      <div class="row">
+        <div class="col-sm-2">
+          <label for="fnum2">Số thứ 2:</label>
+        </div>
+        <div class="col-sm-4">
+          <input type="number" id="fnum2" name="fnum2" required>
+        </div>
+        <div class="col-sm-2">
+          <dl>
+            <dd>
+              <input type="radio" name="operate" id="Minus"> Trừ
+            </dd>
+          </dl>
+        </div>
+        <div class="col-sm-2">
+          <dl>
+            <dd>
+              <input type="radio" name="operate" id="Divide"> Chia
+            </dd>
+          </dl>
+        </div>
       </div>
-    </div>
+      <!--//Row 2-->
+
+      <!--Row 3-->
+      <div class="row">
+        <div class="col-sm-2">
+          <label for="result">Kết quả:</label>
+        </div>
+        <div class="col-sm-4">
+          <div
+            style="width: 189px; height: 30px; margin: 0px; border: 1px solid rgb(133, 133, 133); padding: 2px; padding-top: 1px; padding-bottom: 1px;">
+            <p type="number" id="result" name="result"></p>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <input type="submit" id="button" value="Tính" onclick="buttonClick()">
+        </div>
+      </div>
+    </form>
   </div>
   <!--//Row 3-->
 </body>
