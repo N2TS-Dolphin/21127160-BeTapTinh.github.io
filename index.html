@@ -11,75 +11,73 @@
   <h1 style="text-align: center;">Bé tập tính</h1>
 
   <div class="container mt-5">
-    <form>
-      <!--Row 1-->
-      <div class="row">
-        <div class="col-sm-2">
-          <label for="fnum1">Số thứ 1:</label>
-        </div>
-        <div class="col-sm-4">
-          <input type="number" id="fnum1" name="fnum1" required>
-        </div>
-        <div class="col-sm-2">
-          <dl>
-            <dd>
-              <input type="radio" name="operate" id="Plus"> Cộng
-            </dd>
-          </dl>
-        </div>
-        <div class="col-sm-2">
-          <dl>
-            <dd>
-              <input type="radio" name="operate" id="Multiply"> Nhân
-            </dd>
-          </dl>
-        </div>
+    <!--Row 1-->
+    <div class="row">
+      <div class="col-sm-2">
+        <label for="fnum1">Số thứ 1:</label>
       </div>
-      <!--//Row 1-->
+      <div class="col-sm-4">
+        <input type="number" id="fnum1" name="fnum1">
+      </div>
+      <div class="col-sm-2">
+        <dl>
+          <dd>
+            <input type="radio" name="operate" id="Plus"> Cộng
+          </dd>
+        </dl>
+      </div>
+      <div class="col-sm-2">
+        <dl>
+          <dd>
+            <input type="radio" name="operate" id="Multiply"> Nhân
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!--//Row 1-->
 
-      <!--Row 2-->
-      <div class="row">
-        <div class="col-sm-2">
-          <label for="fnum2">Số thứ 2:</label>
-        </div>
-        <div class="col-sm-4">
-          <input type="number" id="fnum2" name="fnum2" required>
-        </div>
-        <div class="col-sm-2">
-          <dl>
-            <dd>
-              <input type="radio" name="operate" id="Minus"> Trừ
-            </dd>
-          </dl>
-        </div>
-        <div class="col-sm-2">
-          <dl>
-            <dd>
-              <input type="radio" name="operate" id="Divide"> Chia
-            </dd>
-          </dl>
-        </div>
+    <!--Row 2-->
+    <div class="row">
+      <div class="col-sm-2">
+        <label for="fnum2">Số thứ 2:</label>
       </div>
-      <!--//Row 2-->
+      <div class="col-sm-4">
+        <input type="number" id="fnum2" name="fnum2">
+      </div>
+      <div class="col-sm-2">
+        <dl>
+          <dd>
+            <input type="radio" name="operate" id="Minus"> Trừ
+          </dd>
+        </dl>
+      </div>
+      <div class="col-sm-2">
+        <dl>
+          <dd>
+            <input type="radio" name="operate" id="Divide"> Chia
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!--//Row 2-->
 
-      <!--Row 3-->
-      <div class="row">
-        <div class="col-sm-2">
-          <label for="result">Kết quả:</label>
-        </div>
-        <div class="col-sm-4">
-          <div
-            style="width: 189px; height: 30px; margin: 0px; border: 1px solid rgb(133, 133, 133); padding: 2px; padding-top: 1px; padding-bottom: 1px;">
-            <p type="number" id="result" name="result"></p>
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <input type="submit" id="button" value="Tính" onclick="buttonClick()">
+    <!--Row 3-->
+    <div class="row">
+      <div class="col-sm-2">
+        <label for="result">Kết quả:</label>
+      </div>
+      <div class="col-sm-4">
+        <div
+          style="width: 189px; height: 30px; margin: 0px; border: 1px solid rgb(133, 133, 133); padding: 2px; padding-top: 1px; padding-bottom: 1px;">
+          <p type="number" id="result" name="result"></p>
         </div>
       </div>
-    </form>
+      <div class="col-sm-2">
+        <input type="button" id="button" value="Tính" onclick="buttonClick()">
+      </div>
+    </div>
+    <!--//Row 3-->
   </div>
-  <!--//Row 3-->
 </body>
 
 </html>
